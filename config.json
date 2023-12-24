@@ -1,0 +1,40 @@
+{
+  "connection": "",
+  "pool": {
+    "min": 1,
+    "max": 10
+  },
+  "client": "",
+  "secret": "NEYf6b-LengQVkEEfnT6j",
+  "token_expiration_time": "24h",
+  "salt_rounds": 10,
+  "payment": {
+    "stripe_publishable_key": "stripe_publishable_key",
+    "stripe_secret_key": "stripe_secret_key",
+    "product": {
+      "monthly": {
+        "price_id": "price_id",
+        "actual_price": "100",
+        "currency": "$",
+        "display": "Monthly",
+        "text": "month"
+      },
+      "yearly": {
+        "price_id": "price_id",
+        "actual_price": "1000",
+        "currency": "$",
+        "display": "Annual",
+        "text": "annum"
+      }
+    },
+    "stripe_webhook_key": "stripe_webhook_key"
+  },
+  "ui_url": "http://localhost:4200",
+  "app_url": "http://localhost:3000",
+  "trial_period_days": 14,
+  "payment_enabled": false,
+  "superadmin": {
+    "username": "rootuser@user.com",
+    "password": "root"
+  }
+}
